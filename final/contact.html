@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card-Show</title>
+    <link rel="stylesheet" href="1.css">
+    <style>
+
+        .card-frame {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            height: 300px;
+            display: inline-block;
+            text-align: center;
+        }
+       
+        .card-frame img {
+            width: 100%; 
+            height: auto; 
+        }
+    
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="main.html">Home</a>
+        <a href="priceguide.html">Price Guide</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+
+    <h1>Card-Show</h1>
+    
+ <div class="flex-container">
+        
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.2270556207927!2d-76.14374358845417!3d43.036653991968535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f39987314d47%3A0x37af8ddd24bfe9e4!2sHenry%20Lot%2C%20150%20Henry%20St%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1szh-CN!2sus!4v1707019189398!5m2!1szh-CN!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    
+    <form action="https://formspree.io/f/mpzvdaaj" method="post">
+        <label for="fullname">Name:</label><br>
+        <input type="text" id="fullname" name="fullname"><br>
+
+        <label for="textarea">Card description:</label><br>
+        <textarea id="textarea" name="Textarea" rows="2" cols="60"></textarea><br>
+
+        <p>What's ur aim for this?</p>
+        <input type="radio" id="choice1" name="choice" value="pick 1">
+        <label for="choice1">Just interseted in price</label>
+
+        <input type="radio" id="choice2" name="choice" value="pick 2">
+        <label for="choice2">I do wanna buy this card</label><br>
+
+        <input type="submit" value="Send!">
+    </form>
+</div>
+
+<br>
+<a href="#top">return to the top</a><br>
+
+</body>
